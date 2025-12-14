@@ -1,0 +1,92 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: var(--cWidth);
+  margin: auto;
+  height: auto;
+}
+
+.about-me {
+  padding: 70px 0px 40px;
+  width: 720px;
+  max-width: calc(100% - 24px);
+}
+
+.about-me h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+  color: var(--accentColor);
+}
+
+/* THIS IS THE FIX FOR THE "FONT STICKING" */
+.about-me p {
+  margin: 0;
+
+  /* readable text */
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+
+  /* fix stuck letters/words */
+  letter-spacing: 0px;
+  word-spacing: 2px;
+
+  /* fix wrapping + allow \n line breaks from config */
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  word-break: normal;
+
+  /* keeps it looking clean, not full-width */
+  max-width: 58ch;
+
+  color: rgba(234, 229, 236, 0.92);
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-section {
+    max-width: 1920px;
+    justify-content: flex-end;
+    height: var(--vh);
+  }
+
+  .about-me {
+    width: 52%;
+    padding: 0;
+  }
+
+  .about-me p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .about-me {
+    padding: 60px 0px 30px;
+  }
+
+  .about-me p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+.about-text p {
+  margin: 0 0 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0px !important;
+  word-spacing: 2px;
+  white-space: normal;
+  color: rgba(234, 229, 236, 0.92);
+  max-width: 58ch;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
