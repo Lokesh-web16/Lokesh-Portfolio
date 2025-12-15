@@ -50,7 +50,7 @@ export const config = {
       category: "Full Stack + AI",
       technologies:
         "React, Vite, Modern CSS, Google Cloud Run, Firebase Auth, Firestore, Gemini Pro API, Web Speech API",
-      image: "/images/project1.png",
+      image: "images/project1.png",
       links: {
         demo: "https://smartbiz-frontend-75650840064.asia-southeast1.run.app",
         github: "https://github.com/Lokesh-web16/smartbiz-ai",
@@ -67,7 +67,7 @@ export const config = {
       title: "Face Recognition & Attendance System",
       category: "Python + Computer Vision",
       technologies: "Python 3.10, OpenCV, MySQL, Firebase",
-      image: "/images/project2.png",
+      image: "images/project2.png",
       links: { demo: "", github: "" },
       highlights: [
         "Recognizes faces using stored encodings and marks attendance automatically.",
@@ -80,7 +80,7 @@ export const config = {
       title: "BattleGrounds Unleashed — Content + Analytics",
       category: "Growth + Analytics",
       technologies: "YouTube Analytics, Content Pipeline, Video Editing, Data-driven iteration",
-      image: "/images/project3.png",
+      image: "images/project3.png",
       links: { demo: "", github: "" },
       highlights: [
         "Produced and edited 126+ videos with consistent scheduling discipline.",

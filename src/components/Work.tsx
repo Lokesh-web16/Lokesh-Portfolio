@@ -69,7 +69,10 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage 
+  image={project.image.startsWith("http") ? project.image : `${import.meta.env.BASE_URL}${project.image.replace(/^\//, "")}`} 
+  alt={project.title} />
+
             </div>
           ))}
         </div>
