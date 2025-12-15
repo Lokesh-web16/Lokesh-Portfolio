@@ -12,6 +12,8 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+
+// FIX 1: Add BASE_URL to all images so they load on GitHub Pages
 const imageUrls = [
   "images/react2.webp",
   "images/next2.webp",
@@ -21,7 +23,7 @@ const imageUrls = [
   "images/mysql.webp",
   "images/typescript.webp",
   "images/javascript.webp",
-];
+].map((url) => `${import.meta.env.BASE_URL}${url}`);
 
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -200,8 +202,11 @@ const TechStack = () => {
             />
           ))}
         </Physics>
+        
+        {/* FIX 2: Add BASE_URL to the HDR file path */}
+        {/* Make sure the filename matches your folder EXACTLY (char_enviorment.hdr) */}
         <Environment
-          files="models/char_enviorment.hdr"
+          files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
