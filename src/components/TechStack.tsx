@@ -205,8 +205,8 @@ const TechStack = () => {
         
         {/* FIX 2: Add BASE_URL to the HDR file path */}
         {/* Make sure the filename matches your folder EXACTLY (char_enviorment.hdr) */}
-        <Environment
-          files={`${import.meta.env.BASE_URL}/models/char_enviorment.hdr`}
+         <Environment
+          files="models/char_enviorment.hdr"
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
