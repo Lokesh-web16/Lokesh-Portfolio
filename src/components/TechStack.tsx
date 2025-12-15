@@ -201,7 +201,7 @@ const TechStack = () => {
           ))}
         </Physics>
       <Environment 
-  files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`} 
+  files={`${import.meta.env.BASE_URL}models/char_environment.hdr`} 
 />
         <EffectComposer enableNormalPass={false}>
           <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
