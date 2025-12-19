@@ -1,10 +1,9 @@
-// vite.config.js
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ command }) => ({
-  // This must match your repo name: Lokesh-Portfolio
-  base: command === "serve" ? "/" : "/Lokesh-Portfolio/", // ✅ Correct
+// https://vitejs.dev/config/
+export default defineConfig({
+  // Base path must match your repository name: Lokesh-Portfolio-Web
+  base: "/Lokesh-Portfolio-Web/",
   plugins: [react()],
-}));
+});
